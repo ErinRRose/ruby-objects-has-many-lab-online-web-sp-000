@@ -30,4 +30,3 @@ attr_accessor :name
     s
   end
 end
-
