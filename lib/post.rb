@@ -1,6 +1,12 @@
 class Post
 
-attr_accessor :author
+  attr_accessor :author
 
-@@all = []
+  @@all = []
+
+  def initialize
+
+    @@all <<self
+  end
+  
 end
