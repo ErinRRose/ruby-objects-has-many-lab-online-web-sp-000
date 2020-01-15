@@ -27,7 +27,6 @@ attr_accessor :name
     ##binding.pry
     s = Song.new(name)
     add_song(s)
-    s
   end
 
   def self.song_count
