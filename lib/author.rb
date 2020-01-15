@@ -1,9 +1,12 @@
 class Author
 
-attr_accessor :name
+  attr_accessor :name
 
-def initialize(name)
-  @name = name
+  def initialize(name)
+    @name = name
+  end
 
-end
+  def posts
+    Post.all.select {|post| post.author == self}
+  end
 end
